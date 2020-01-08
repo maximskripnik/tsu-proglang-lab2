@@ -5,6 +5,7 @@ ENV GOPATH /opt/app
 
 COPY src /opt/app/src
 
+RUN go get all
 RUN go build main
 
 ENTRYPOINT [ "./main" ]

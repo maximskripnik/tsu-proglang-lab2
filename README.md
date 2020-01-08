@@ -5,6 +5,7 @@
 
 ```bash
 $ export GOPATH=$(pwd)
+$ go get all
 $ go build main
 $ ./main -m server -p 9000 -n 50 # start server
 $ ./main -m client --host localhost -p 9000 # start client
